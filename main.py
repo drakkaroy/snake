@@ -140,6 +140,8 @@ def run(w, h, block_size):
                     new_dir = 2
                 elif event.key == pygame.K_DOWN:
                     new_dir = 3
+                elif event.key == pygame.K_SPACE:
+                    pygame.image.save(screen, "screen.png")
 
             if not opposing(s.direction, new_dir):
                 s.direction = new_dir
